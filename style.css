@@ -1,0 +1,134 @@
+html {
+	width: 100%;
+}
+
+body {
+	background: #f5f2d5;
+}
+
+h1 {
+	font-family: 'Playball', cursive;
+	font-size: 2.3em;
+	text-align: center;
+	color: #000;
+	margin: auto 0;
+}
+
+h2, h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	color: #000;
+	font-variant: small-caps;
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+h3 {
+	color: #F5F2EC;
+	font-variant: normal;
+}
+
+
+form {
+	text-align: center;
+}
+
+input[type=text] {
+	height: 60px;
+	width: 125px;
+	background: #F5F2EC;
+	margin: 10px;
+	border: 1px solid rgba(140,117,97, .8);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+}
+
+button {
+	background: rgba(140,117,97, .8);
+	text-shadow: none;
+	cursor: pointer;
+	border: none;
+	margin: 10px;
+	padding: 10px;
+}
+
+button:hover {
+	background: rgba(140,117,97, .6);
+}
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.guess {
+	text-align: center;
+	display: block;
+}
+
+.button-group {
+	text-align: center;
+}
+
+#guessing-area {
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.answer {
+	height: 50%;
+	width: 100%;
+	overflow: hidden;
+	background: #FFF;
+}
+
+@media screen and (min-width: 480px) { 
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 868px) {
+	h1 {
+		font-size: 5em;
+	}
+	h2,h3 {
+		font-size: 2em;
+	}
+	.guess {
+		float: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.button-group {
+		float: right;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#guessing-area {
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+	flex-direction: row;
+	padding: 0;
+	justify-content: space-between;
+}
+	input[type=text] {
+		height: 60px;
+		width: 225px;
+		}
+	.answer {
+		width: 50%;
+	}
+}
