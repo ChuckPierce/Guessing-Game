@@ -3,7 +3,8 @@ html {
 }
 
 body {
-	background: #f5f2d5;
+	background: rgb(245,242,213);
+	/*background-image: linear-gradient(#f5f2d5, #faf8ea); */
 }
 
 h1 {
@@ -19,7 +20,7 @@ h2, h3 {
 	text-align: center;
 	color: #000;
 	font-variant: small-caps;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin: 10px;
 }
 
@@ -34,13 +35,14 @@ form {
 }
 
 input[type=text] {
-	height: 60px;
-	width: 125px;
+	height: 55px;
+	width: 75px;
 	background: #F5F2EC;
 	margin: 10px;
 	border: 1px solid rgba(140,117,97, .8);
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 button {
@@ -59,6 +61,7 @@ button:hover {
 .wrapper {
 	width: 90%;
 	margin: auto;
+	height: 100%;
 }
 
 .guess {
@@ -75,16 +78,54 @@ button:hover {
   	display: -webkit-flex;
   	display: -ms-flexbox;
   	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding: 0;
-	margin-top: 30px;
+	margin: 30px;
 }
 
 .answer {
 	height: 50%;
 	width: 100%;
 	overflow: hidden;
-	background: #FFF;
+	text-align: center;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+		        justify-content: space-around;
+		        align-items: center;
+}
+
+.line {
+	height:1px;
+	background:#717171;
+	border-bottom:1px solid #313030;
+}
+
+header {
+	margin: 0px;
+}
+
+.mascot {
+	width: 150px;
+	height: 100%;
+	background: url('littleguy.png') no-repeat;
+	margin: 10px;
+	padding-right: 50px;
+}
+
+p {
+	margin: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 @media screen and (min-width: 480px) { 
@@ -93,6 +134,9 @@ button:hover {
 	}
 	h2 {
 		font-size: 1.5em;
+	}
+	p {
+	font-size: 1.3em;
 	}
 }
 
@@ -105,30 +149,79 @@ button:hover {
 	}
 	.guess {
 		float: left;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.button-group {
 		float: right;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	#guessing-area {
 	display: -webkit-box;
   	display: -webkit-flex;
   	display: -ms-flexbox;
   	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	padding: 0;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 30px 20px 30px 0px;
 }
 	input[type=text] {
-		height: 60px;
-		width: 225px;
+		height: 65px;
+		width: 125px;
+		margin-left: 70px;
+		font-size: 3em;
 		}
 	.answer {
 		width: 50%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+		        justify-content: space-around;
+		        align-items: center;
 	}
+	header {
+	margin-left: 30px;
+}
+p {
+	margin: 10px;
+	font-size: 1.5em;
+
+}
 }
