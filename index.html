@@ -1,5 +1,6 @@
 <html>
 <head>
+	<link href="/public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>The Guessing Game</title>
@@ -13,12 +14,14 @@
 		</header>
 		
 		<div id="guessing-area">
+			
 			<div class="guess">
-				<input type="number" name="guess" id="guess">
+				<input type="number" name="guess" id="guess" placeholder="1-100">
 				<button id="submit">
 					<h3>Submit Your Guess</h3>
 				</button>
 			</div>
+			
 			<div class="answer">
 				<div class="mascot">
 					<div class="begin"></div>
@@ -28,6 +31,7 @@
 						<br>	
 					Feeling lucky ol' chap?</p>
 			</div>
+
 			<div class="button-group">
 				<button id="reset">
 					<h3>Play Again</h3>
@@ -36,12 +40,18 @@
 					<h3>Give me a Hint</h3>
 				</button>
 			</div>
+
 		</div>
+
 		<div class="line bottom"></div>
+
 		<div class="answers"><p>You have <span>5</span> guesses.  Use them wisely...</p></div>
+		
 		<div class="status"></div>
 	</div>
+
 	<script src="jquery-1.11.1.js"></script>
 	<script src="script.js"></script>
+
 </body>
 </html>
